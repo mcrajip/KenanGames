@@ -21,7 +21,9 @@ h1, h2 {
 }
 
 .container {
+    
     width: 600px;
+    min-height: 200px;
     margin: auto;
     cursor: url(image/palu1.png), auto;
 }
@@ -60,4 +62,17 @@ h1, h2 {
 
 .tanah.muncul .kenan {
     top: -40px;
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        padding: 16px 32px;
+    }
+
+    h1, h2, button {
+        align-items: center;
+        justify-content: center;
+    }
+
+
 }
