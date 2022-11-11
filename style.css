@@ -1,0 +1,55 @@
+body {
+    background-color: orange;
+}
+
+button {
+    background-color: brown;
+    color: white;
+    display: block;
+    margin: auto;
+}
+h1 {
+    font-size: 60px;
+    text-align:  center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 600px;
+    margin: auto;
+    /* border: 1px solid black; */
+     
+}
+.tanah {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+
+.tanah::after {
+    content: '';
+    display: block;
+    height: 100px;
+    width: 200px;
+    background: url("image/tanah.png") bottom center no-repeat;
+    background-size: 93%;
+    position: absolute;
+    bottom: -5px;
+}
+
+.kenan {
+    width: 100%;
+    height: 100%;
+    background: url(image/PicsArt_22-11-11_10-55-23-693.png) bottom center no-repeat;
+    background-size: 45%;
+    position: absolute;
+    top: 100px;
+    transition: top 0.3s;
+}
+
+.tanah.muncul .kenan {
+    top: -40px;
+}
